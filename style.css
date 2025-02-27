@@ -166,6 +166,7 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+    clip-path: circle(50% at 50% 50%);
 }
 
 .section__text{
@@ -342,6 +343,7 @@ article{
 article .icon{
     cursor: default;
 }
+
 
 
 
