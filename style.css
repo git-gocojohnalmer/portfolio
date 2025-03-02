@@ -87,7 +87,7 @@ a:hover{
 }
 
 .menu-links {
-    position: absolute;
+    position: relative;
     top: 100%;
     right: 0%;
     background-color: white;
@@ -159,6 +159,13 @@ section {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    border: rgb(53, 53, 53);
 }
 
 .section__pic-container{
@@ -406,5 +413,13 @@ article .icon{
 .contact-icon{
     cursor: default;
     height: 2rem;
-    
-}
+
+} 
+
+
+
+
+
+
+
+
