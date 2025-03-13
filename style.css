@@ -159,6 +159,7 @@ section {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    
 }
 
 .profile-pic{
@@ -174,6 +175,7 @@ section {
     width: 400px;
     margin: auto 0;
     clip-path: circle(50% at 50% 50%);
+
 }
 
 .section__text{
@@ -412,9 +414,28 @@ article .icon{
 
 .contact-icon{
     cursor: default;
-    height: 2rem;
 
 } 
+
+.email-icon {
+
+    height: 2.5rem;
+}
+
+/* Footer Section */
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
+    
+}
+
+
+
 
 
 
