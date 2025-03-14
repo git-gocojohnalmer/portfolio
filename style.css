@@ -83,7 +83,7 @@ a:hover{
     height: 2px;
     width: 100%;
     background-color: black;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-links {
@@ -135,7 +135,7 @@ a:hover{
     opacity: 1;
 }
 
-.hamburger-icon span:first-child { 
+.hamburger-icon span:last-child { 
     transform: none;
 }
 /* SECTIONS */
@@ -232,7 +232,7 @@ section {
 }
 .btn-color-1,
 .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1 solid;  
+    border: rgb(53, 53, 53) 0.1rem solid;  
 }
 
 .btn-color-1:hover,
