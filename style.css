@@ -5,6 +5,8 @@
 *{
     margin: 0;
     padding: 0;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
 }
 
 body{
@@ -163,9 +165,9 @@ section {
 }
 
 .profile-pic{
-    border-radius: 50%;
-    height: 400px;
-    width: 400px;
+    border-radius: 2rem;
+    max-width: 100%;            
+    height: auto; 
     border: rgb(53, 53, 53);
 }
 
@@ -229,6 +231,7 @@ section {
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
+    margin-bottom: 2rem;
 }
 .btn-color-1,
 .btn-color-2 {
