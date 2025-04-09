@@ -317,6 +317,14 @@ section {
     width: 400px;
     margin: auto 0;
 }
+
+.text-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    gap: 1rem;
+}
 /* EXPERIENCE SECTION */
 
 #experience{
