@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
+
+    <div id="particle-js"></div>
+     <div class="main-content">
     <nav id="desktop-nav">
         <div class="logo">John Almer Goco</div>
         <div>
@@ -21,12 +24,12 @@
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">John Almer Goco</div>
-        <div class="hamburger-menu"></div> 
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+            <div class="hamburger-menu"></div> 
+                 <div class="hamburger-icon" onclick="toggleMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+            </div>
     </nav> 
 
     <div class="menu-links">
@@ -85,7 +88,7 @@
             <div class="about-containers">
                 <div class="details-container">
                     <img src="./assets/experience-badge.png" 
-                    alt="Experience icon"
+                    alt="Experience icon"  
                     class="icon"
                     />
                     <h3>Degree</h3>
@@ -112,11 +115,11 @@
     </section>
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <h1 class="title">Tech Stack</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Work Experiences</h2>
+                    <h2 class="experience-sub-title">Tech Stack</h2>
                     <div class="article-container">
                        <article>
                         <img src="./assets/java.png"
@@ -124,8 +127,8 @@
                         class="icon"
                         />
                         <div>
-                            <h3>N/A</h3>
-                            <p>Experienced</p>           
+                            <h3>Java</h3>
+                            <p>New</p>           
                         </div>
                        </article>
                        <article>
@@ -134,8 +137,8 @@
                         class="icon"
                         />
                         <div>
-                            <h3>N/A</h3>
-                            <p>Experienced</p>
+                            <h3>C</h3>
+                            <p>New</p>
                         </div>
                        </article>
                        <article>
@@ -144,8 +147,8 @@
                         class="icon"
                         />
                         <div>
-                            <h3>N/A</h3>
-                            <p>Intermediate</p>
+                            <h3>JS</h3>
+                            <p>New</p>
                         </div>
                        </article>
                        <article>
@@ -154,31 +157,20 @@
                         class="icon"
                         />
                         <div>
-                            <h3>N/A</h3>
-                            <p>Basic</p>
+                            <h3>HTML</h3>
+                            <p>New</p>
                         </div>
                        </article>
                        <article>
-                        <img src="./assets/css.png" 
+                        <img src="./assets/css-3 (1).png" 
                         alt="Experience icon"
                         class="icon"
                         />
                         <div>
-                            <h3>N/A</h3>
-                            <p>Basic</p>
+                            <h3>CSS</h3>
+                            <p>New</p>
                         </div>
                        </article>
-                       <article>
-                        <img src="./assets/experience-icon.png" 
-                        alt="Experience icon"
-                        class="icon"
-                        />
-                        <div>
-                            <h3>N/A</h3>
-                            <p>Intermediate</p>
-                        </div>
-                       </article>
-                    </div>
                 </div>
         </div>
         <img 
@@ -190,7 +182,7 @@
     </section>
     <section id="projects">
          <p class="section__text__p1">Browse My Recent</p>
-         <h1 class="title">Projects</h1>
+         <h1 class="title">Work</h1>
          <div class="experience-details-container">
             <div class="about-containers">
             <div class="details-container color-container">
@@ -201,12 +193,7 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Project One</h2>
                 <div class="btn-container">
-                    <button 
-                    class="btn btn-color-2 project-btn" onclick="location
-                    .href='https://Github.com'"
-                    >
-                        Github
-                    </button>
+            
                 
                 </div>
             </div>
@@ -218,12 +205,6 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Project Two</h2>
                 <div class="btn-container">
-                    <button 
-                    class="btn btn-color-2 project-btn" onclick="location
-                    .href='https://Github.com'"
-                    >
-                        Github
-                    </button>
                 </div>
             </div>
             <div class="details-container color-container">
@@ -234,12 +215,6 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Project Three</h2>
                 <div class="btn-container">
-                    <button 
-                    class="btn btn-color-2 project-btn" onclick="location
-                    .href='https://Github.com'"
-                    >
-                        Github
-                    </button>
                 </div>
             </div>
         </div>
@@ -272,6 +247,29 @@
                 class="icon contact-icon"
                 />
                 <p><a href="https://www.linkedin.com">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </div>
+        <div class="contact-info-lower-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/call.png" 
+                alt="Phone icon"
+                class="icon contact-icon"
+                onclick="location.href= 'tel:+639173123456'"
+                />
+                <p><a href="tel:+639124567893">09124567893</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/facebook.png" 
+                alt="Facebook icon"
+                class="icon contact-icon"
+                onclick="location.href= 'https://www.facebook.com/johnalmer.goco.5'"
+                />
+                <p><a href="https://www.facebook.com/johnalmer.goco.5">Facebook</a>
                 </p>
             </div>
         </div>

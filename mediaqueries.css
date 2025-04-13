@@ -37,7 +37,7 @@
     section{
         margin: 0.5%;
     }
-    .sectio__pic-container{
+    .section__pic-container{
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
@@ -45,6 +45,7 @@
     .about-containers{
         margin-top: 0;
     }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -102,6 +103,11 @@
         .text-container{
             text-align: justify;
         }
+
+        .main-content {
+            padding: 15px;
+            
+          }
 
         
 }

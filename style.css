@@ -59,8 +59,29 @@ a:hover{
     font-size: 2rem;
 } 
 .logo:hover{
-    cursor: default
+    cursor: default;
 }
+
+/* Particle js */
+
+#particles-js {
+    position: fixed;       /* Sticks to the screen */
+    width: 100%;           /* Full width */
+    height: 100%;          /* Full height */
+    top: 0;                /* Align to top */
+    left: 0;               /* Align to left */
+    z-index: 0;            /* Keep it behind the content */
+  }
+  
+  .main-content {
+    position: relative;    /* Ensure it layers on top of the particles */
+    z-index: 1;            /* Content above the background */
+    color: #fff;           /* Make sure text is visible */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);  /* Semi-transparent dark background */
+    margin: 20px;
+    border-radius: 10px;
+  }
 /* HAMBURGER MENU */
 
 #hamburger-nav{
@@ -316,6 +337,7 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+    clip-path: circle(50% at 50% 50%);
 }
 
 .text-container{
@@ -445,11 +467,18 @@ footer p{
     
 }
 
+.icon.contact-icon:hover {
+    transform: scale(1.1);
 
+}
 
-
-
-
+.contact-info-lower-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
 
 
 
