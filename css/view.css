@@ -1,0 +1,151 @@
+/* Desktop View */
+
+#desktop-nav {
+  height: 12vh;
+}
+
+#contact {
+  padding-top: 3rem;
+  min-height: 70vh;
+}
+
+.contact-info-upper-container,
+.contact-info-lower-container {
+  margin: 1.5rem auto;
+  max-width: 90%;
+}
+
+/* Tablet and Mobile View */
+@media screen and (max-width: 1200px) {
+  /*navigation positioning */
+  body {
+    padding-top: 70px;
+  }
+  
+  #hamburger-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: calc(100% - 2rem);
+    margin: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Improved hamburger menu styling */
+  .hamburger-icon span {
+    height: 2px;
+    background-color: #333;
+    margin: 2px 0;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Better menu links */
+  .menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: auto;
+    min-width: 200px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    z-index: 1001;
+  }
+  
+  .menu-links.open {
+    max-height: 300px;
+    opacity: 1;
+    padding: 0.5rem;
+    width: auto;
+  }
+  
+  .menu-links li {
+    list-style: none;
+    margin: 0.5rem 0;
+  }
+  
+  .menu-links a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-links a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Fix section spacing */
+  section {
+    padding-top: 90px !important;
+    margin: 0 1rem !important;
+  }
+  
+  /* Adjust profile section for mobile */
+  #profile {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  
+  /* Profile picture styles for mobile and tablet - override circular desktop style */
+  .section__pic-container,
+  #about .section__pic-container {
+    height: 280px;
+    width: 280px;
+    margin: 0 auto 1.5rem;
+    border-radius: 25px !important;
+    border-width: 6px;
+  }
+  
+  /* Ensure consistent styling between home and about page profile pictures */
+  #profile .section__pic-container,
+  #about .section__pic-container {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .section__pic-container:hover,
+  #about .section__pic-container:hover {
+    transform: translateY(-5px);
+    border-radius: 35px !important;
+  }
+  
+  .profile-pic,
+  .about-pic {
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .profile-pic:hover,
+  .about-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Add consistent animation for mobile profile pictures */
+  @keyframes float-mobile {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  /* Ensure both profile pictures use the same animation */
+  #profile .section__pic-container,
+  #about .section__pic-container {
+    animation: float-mobile 3s ease-in-out infinite;
+  }
+}

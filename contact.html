@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Almer Goco | Home</title>
+    <title>John Almer Goco | Contact</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaqueries.css">
     <link rel="stylesheet" href="css/view.css">
 </head>
 <body>
-
     <div id="particle-js"></div>
     <div class="main-content">
     <nav id="desktop-nav">
         <div class="logo">John Almer</div>
         <div>
             <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="tech-stack.html">Tech Stack</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -31,47 +31,52 @@
                 <span></span>
             </div>
             <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
                 <li><a href="about.html" onclick="toggleMenu()">About</a></li>
                 <li><a href="tech-stack.html" onclick="toggleMenu()">Tech Stack</a></li>
                 <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile.png" alt="John Almer Goco Profile Picture"
-            class="profile-pic"
-            />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">John Almer Goco</h1>
-            <p class="section__text__p2">Student of St. Dominic College of Asia</p>
-            <div class="btn-container">
-                <button class="btn btn-color-1" 
-                onclick="window.location.href='./contact.html'">Contact Info</button>
-            </div>
-            <div id="socials-container">
+    </nav> 
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
                 <img 
-                src="./assets/facebook-logo.png" 
-                alt="My Facebook" 
-                class="icon" 
+                src="./assets/Linkedin-Icon.png" 
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+        <div class="contact-info-lower-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/call.png" 
+                alt="Phone icon"
+                class="icon contact-icon"
+                onclick="location.href= 'tel:+639173123456'"
+                />
+                <p><a href="tel:+639124567893">09124567893</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/facebook.png" 
+                alt="Facebook icon"
+                class="icon contact-icon"
                 onclick="location.href= 'https://www.facebook.com/johnalmer.goco.5'"
-                
                 />
-                <img 
-                src="./assets/github-logo.png" 
-                alt="My Github" 
-                class="icon" 
-                onclick="location.href= 'https://github.com/git-gocojohnalmer'"
-
-                />
-            
+                <p><a href="https://www.facebook.com/johnalmer.goco.5">Facebook</a>
+                </p>
             </div>
         </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/particles.js"></script>
 </body>
 </html>
-
