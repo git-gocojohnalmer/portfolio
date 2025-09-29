@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <title>John Almer Goco | Home</title>
+    <title>John Almer Goco | Tech Stack</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaqueries.css">
     <link rel="stylesheet" href="css/view.css">
+    <link rel="stylesheet" href="css/projects.css">
 </head>
 <body>
 
@@ -20,7 +20,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="tech-stack.html">Tech Stack</a></li>
-                 <li><a href="projects.html">Projects</a></li>
             </ul>
         </div>
     </nav>
@@ -36,43 +35,44 @@
                 <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
                 <li><a href="about.html" onclick="toggleMenu()">About</a></li>
                 <li><a href="tech-stack.html" onclick="toggleMenu()">Tech Stack</a></li>
-                 <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
             </div>
         </div>
     </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile.png" alt="John Almer Goco Profile Picture"
-            class="profile-pic"
-            />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">John Almer Goco</h1>
-            <p class="section__text__p2">Aspiring Web Developer</p>
-            
-                <div class="contact-info-upper-container">
-                    <div class="contact-info-container">
-                        <img 
-                        src="./assets/Linkedin-Icon.png" 
-                        alt="LinkedIn icon"
-                        class="icon contact-icon"/>
-                        <p><a href="https://www.linkedin.com/in/john-almer-goco-303b202a8/">LinkedIn</a>
-                        </p>
-                        <img 
-                        src="./assets/github-logo.png" 
-                        alt="My Github" 
-                        class="icon">
-                        <p><a href="https://www.github.com/git-gocojohnalmer">Github</a>
-                        </p>
+    
+    <section class="projects__section" id ='projects'>
+        <p class="section__text__p1">Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="tech-stack-details-container">
+            <!--Projects grid-->
+
+            <div class="projects-container container grid">
+                <div class ='projects__swiper'>
                     </div>
-                </div>      
-            </div>
-            </div>
+                    <article class = "projects__card">
+                        <div class="blob"></div>
+                        
+                        <div class="projects__number">
+                            <h1>01</h1>
+                            <h3>Mobile App</h3>
+                        </div>
+                        <div class="projects__data">
+                            <h1 class="projects__title">SDCanteen <br> Mobile App</h1>
+                            <p class="projects__subtitle">Technology Used</p>
+                            <p class="projects__description">Github, Android Studio, and Firebase</p>
+                        </div>
+
+                        <div class="projects__image">
+                            <img src="assets/projectpic.jpg" alt="image" class="projects__image">
+                        </div>
+
+                    </article>
+                        
+            
+           
         </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/particles.js"></script>
 </body>
 </html>
-

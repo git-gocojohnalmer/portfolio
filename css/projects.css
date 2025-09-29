@@ -1,0 +1,64 @@
+/* Project section Styles */
+
+.projects .section__text__p1{
+    margin-left: 1.5rem;
+}
+
+.projects__card{
+    position: relative;
+    background-color: #c5c5ae;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+.projects__number, .projects__data, .projects__image{
+    position:relative;
+    z-index: 1;
+
+}
+
+.projects__number{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+ .projects__number h1{
+    font-size: 50px;
+
+ }
+
+.projects__number h3{
+    font-weight: 30px;
+    font-size: 30px;
+    
+ }
+
+ .projects__data{
+    margin-block: 2rem;
+ }
+
+ .projects__title{
+    margin-bottom: 1rem;
+ }
+
+ .projects__subtitle{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-bottom: .5rem;
+ }
+
+ .projects__description{
+    font-size: 20px;
+ }
+
+ .projects__image{
+    border-radius: 1.5rem;
+
+ }
+
+ .projects__buttons{
+    font-weight: 100;
+ }
+

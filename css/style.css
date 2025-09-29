@@ -354,7 +354,7 @@ section {
     align-items: center;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    border: 8px solid rgba(255, 255, 255, 0.8);
+    border: 8px solid rgba(0, 0, 0, 0.8);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

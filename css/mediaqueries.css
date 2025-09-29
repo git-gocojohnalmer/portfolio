@@ -314,6 +314,12 @@
         flex-direction: column;
         align-items: center;
     }
+    .projects__section{
+        padding: 2rem 1rem;
+        margin: 0 2rem;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 /* Landscape orientation for phones */
