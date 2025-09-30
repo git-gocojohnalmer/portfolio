@@ -351,4 +351,11 @@
     .menu-links li {
         margin: 0 1rem;
     }
+
+     .projects__section{
+        padding: 2rem 1rem;
+        margin: 0 2rem;
+        align-items: center;
+        text-align: center;
+    }
 }
