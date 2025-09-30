@@ -26,6 +26,8 @@
 .projects__number, .projects__data, .projects__image{
     position:relative;
     z-index: 1;
+    font-size: 20px;
+    
 
 }
 
@@ -89,9 +91,7 @@
       text-decoration: none;
       font-weight: 600;
    }
-   .projects__button-link:hover{
-      text-decoration: underline;
-   }
+
    .projects__button .icon{
       width: 25px;
       height: 25px;
@@ -144,6 +144,7 @@
     }
     .projects__card {
         padding: 1rem;
+        
     }
     .projects__number h1 {
         font-size: 40px;
