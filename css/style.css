@@ -375,7 +375,7 @@ section {
 }
 
 .profile-pic {
-    width: 100%;
+    width: 96%;
     height: 100%;
     object-fit: cover;
     object-position: center;
@@ -560,7 +560,6 @@ section {
 
 .about-pic {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     object-position: center;
 }
