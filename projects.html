@@ -66,26 +66,30 @@
                     </div>
                     <div class="projects__image">
                         <div class="carousel-thumbnails">
-                            <img src="assets/projectpic.jpg" alt="slide1" class="carousel-thumb">
+                            <img src="assets/projectpic.jpg" alt="Log in Interface" class="carousel-thumb" tabindex="0">
                             <span class="carousel-thumb-size">Log in Interface</span>
-                            <img src="assets/image2.jpg" alt="slide2" class="carousel-thumb">
+                            <img src="assets/image2.jpg" alt="Receipt" class="carousel-thumb" tabindex="0">
                             <span class="carousel-thumb-size">Receipt</span>
-                            <img src="assets/image3.jpg" alt="slide3" class="carousel-thumb">
+                            <img src="assets/image3.jpg" alt="Payments" class="carousel-thumb" tabindex="0">
                             <span class="carousel-thumb-size">Payments</span>
-                            <img src="assets/image4.jpg" alt="slide4" class="carousel-thumb">
+                            <img src="assets/image4.jpg" alt="Orders Log" class="carousel-thumb" tabindex="0">
                             <span class="carousel-thumb-size">Orders Log</span>
-                        </div>
-                        <div id="image-modal" class="image-modal">
-                            <span class="close-modal">&times;</span>
-                            <img class="modal-content" id="modal-img">
                         </div>
                     </div>
                 </article>
             </div>
         </div>
     </section>
+    <!-- Move modal here, outside main content for proper overlay -->
+    <div class="image-modal" id="imageModal" aria-modal="true" role="dialog" tabindex="-1">
+        <span class="close-modal" id="closeModal" aria-label="Close modal" tabindex="0">&times;</span>
+        <div class="modal-content" id="modalContent">
+            <img id="modalImg" src="" alt="" />
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/particles.js"></script>
+    <script src="js/projects.js"></script>
 </body>
 </html>
