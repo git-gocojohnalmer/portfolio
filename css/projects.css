@@ -1,5 +1,106 @@
 /* Project section Styles */
 
+    /* Add to css/projects.css */
+.carousel-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.carousel-thumb-size {
+    font-size: 0.95rem;
+    color: #000000;
+    margin-top: 4px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.carousel-thumb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.carousel-thumb {
+    width: 100%;
+    max-width: 140px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #fff;
+    padding: 8px;
+    display: block;
+}
+.carousel-thumb:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 18px #aaa;
+    z-index: 2;
+}
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.image-modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-modal .modal-content {
+    display: flex;
+    margin: auto;
+    max-width: 90vw;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    background: #fff;
+}
+
+.close-modal {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+    transition: color 0.2s;
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-modal:hover {
+    color: #ff8080;
+    background: rgba(0,0,0,0.6);
+}
+
+
 .projects__section {
     padding: 4rem 2rem;
     display: flex;
@@ -202,6 +303,30 @@
     .projects__button-link {
         font-size: 18px;
     }
+
+     .projects__image {
+        max-width: 98vw;
+        padding: 0 2vw;
+    }
+    .carousel-thumbnails {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 10px;
+    }
+    .carousel-thumb {
+        max-width: 80px;
+        padding: 4px;
+    }
+    .image-modal .modal-content {
+        max-width: 98vw;
+        max-height: 60vh;
+    }
+    .close-modal {
+        top: 10px;
+        right: 16px;
+        font-size: 32px;
+        width: 36px;
+        height: 36px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -252,12 +377,60 @@
         height: 20px;
     }
 
-    .projects__image img {
+    .projects__image {
+        max-width: 100vw;
+        padding: 0 2vw;
+    }
+    .carousel-thumbnails {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        align-items: center;
         width: 100%;
-        height: auto;
-        border-radius: 1rem;
+    }
+    .carousel-thumb {
+        max-width: 90vw;
+        width: 90vw;
+        aspect-ratio: 1/1;
+        padding: 2px;
+    }
+    .image-modal .modal-content {
+        max-width: 98vw;
+        max-height: 50vh;
+    }
+    .close-modal {
+        top: 8px;
+        right: 8px;
+        font-size: 28px;
+        width: 32px;
+        height: 32px;
+    }
+
+        .carousel-thumbnails {
+        justify-content: center;
+        align-items: center;
     }
 }
+
+/* --- Hide scrollbars for modal --- */
+.image-modal {
+    scrollbar-width: none;
+}
+.image-modal::-webkit-scrollbar {
+    display: none;
+}
+
+
+.carousel-thumb,
+.image-modal .modal-content {
+    object-fit: contain;
+    background: #fff;
+}
+
+.carousel-thumbnails > img {
+    margin: 0;
+}
+
 
 @media screen and (max-width: 480px) {
     .section__text__p1 {
@@ -567,5 +740,28 @@
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects__image {
+        max-width: 98vw;
+        padding: 0 4vw;
+    }
+    .carousel-thumbnails {
+        gap: 6px;
+    }
+    .carousel-thumb {
+        width: 56px;
+        height: 56px;
+    }
+    .image-modal .modal-content {
+        max-width: 98vw;
+        max-height: 60vh;
+    }
+    .close-modal {
+        top: 10px;
+        right: 20px;
+        font-size: 32px;
     }
 }

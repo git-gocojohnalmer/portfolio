@@ -1,6 +1,11 @@
 function toggleMenu() {
     const menu = document.querySelector('.menu-links');
     const icon = document.querySelector('.hamburger-icon');
+    const thumbs = document.querySelectorAll('.carousel-thumb');
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-img');
+    const closeModal = document.querySelector('.close-modal');
+
     menu.classList.toggle('open');
     icon.classList.toggle('open');
 }
@@ -79,6 +84,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+thumbs.forEach(thumb => {
+    thumb.addEventListener('click', function() {
+        modal.classList.add('active');
+        modalImg.src = this.src;
+    });
+});
+
+closeModal.onclick = function() {
+    modal.classList.remove('active');
+};
+
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.classList.remove('active');
+    }
+};
+
 
 const menuLinks = document.querySelectorAll('.menu-link');
 const submenuLinks = document.querySelectorAll('.submenu-link');

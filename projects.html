@@ -40,51 +40,50 @@
         </div>
     </nav>
     
-    <section class="projects__section" id ='projects'>
+    <section class="projects__section" id="projects">
         <p class="section__text__p1">Recent</p>
         <h1 class="title">Projects</h1>
         <div class="tech-stack-details-container">
-            <!--Projects grid-->
-
             <div class="projects-container container grid">
-                    <article class = "projects__card">
-                        
-                        <div class="projects__number">
-                            <h1>01</h1>
-                            <h3>
+                <article class="projects__card">
+                    <div class="projects__number">
+                        <h1>01</h1>
+                        <h3>
                             <div class="projects__button">
                                 <img 
-                                src="./assets/viewgithub.png" 
-                                alt="View icon"
-                                class="icon contact-icon"/>
+                                    src="./assets/viewgithub.png" 
+                                    alt="View icon"
+                                    class="icon contact-icon"/>
                                 <a href="https://github.com/jereeza-mae-mayuga/SDCAnteen" class="projects__button-link">View Project</a>
                             </div>
-                            </h3>
+                        </h3>
+                    </div>
+                    <div class="projects__data">
+                        <h1 class="projects__title">SDCanteen <br> Mobile App</h1>
+                        <p class="projects__subtitle">Technology Used</p>
+                        <p class="projects__description">Github, Android Studio, Firebase</p>
+                        <p class="projects__description">SDCanteen is a mobile app designed to streamline the food ordering process for students.</p>
+                    </div>
+                    <div class="projects__image">
+                        <div class="carousel-thumbnails">
+                            <div class="carousel-thumb-container">
+                            <img src="assets/projectpic.jpg" alt="slide1" class="carousel-thumb">
+                            <span class="carousel-thumb-size">Log in Interface</span>
+                            <img src="assets/image2.jpg" alt="slide2" class="carousel-thumb">
+                            <span class="carousel-thumb-size">Receipt</span>
+                            <img src="assets/image3.jpg" alt="slide3" class="carousel-thumb">
+                            <span class="carousel-thumb-size">Payments</span>
+                            <img src="assets/image4.jpg" alt="slide4" class="carousel-thumb">
+                            <span class="carousel-thumb-size">Orders Log</span>
                         </div>
-                        <div class="projects__data">
-                            <h1 class="projects__title">SDCanteen <br> Mobile App</h1>
-                            <p class="projects__subtitle">Technology Used</p>
-                            <p class="projects__description">Github, Android Studio, Firebase</p>
-                            <p class="projects__description">SDCanteen is a mobile app designed to streamline the food ordering process for students.</p>
-
                         </div>
-
-                        <div class="projects__image">
-                            <div class="slider">
-                            <img src="assets/projectpic.jpg" alt="slide1" class="projects__image">
-                            <img src="assets/image2.jpg" alt="slide2" class="projects__image">
-                            <img src="assets/image3.jpg" alt="slide3" class="projects__image">
-                            <img src="assets/image4.jpg" alt="slide4" class="projects__image">
+                        <div id="image-modal" class="image-modal">
+                            <span class="close-modal">&times;</span>
+                            <img class="modal-content" id="modal-img">
                         </div>
-                        <div class="slider-nav">
-                            <a href="slider1"></a>
-                            <a href="slider2"></a>
-                            <a href="slider3"></a>
-                            <a href="slider4"></a>
-                        </div>
-
-                    </article>
-                    
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
