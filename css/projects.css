@@ -22,13 +22,6 @@
     font-weight: bold;
 }
 
-.carousel-thumb-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
 .carousel-thumb {
     width: 100%;
     max-width: 140px;
